@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* default Css */
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/* header css */
+.header{
+    background: #596275;
+}
+.header-left {
+    float: left;
+    width: 30%;
+}
+.header-left a{}
+.header-left a img{
+    width: 150px;
+}
+
+.header-right {
+    float: right;
+    width: 70%;
+}
+.header-right ul{
+    list-style: none;
+    text-align: right;
+}
+.header-right ul li{
+    display: inline-block;
+}
+.header-right ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    line-height: 38px;
+    text-transform: capitalize;
+    border-right: 1px solid #fff;
+}
+
+ /* slider css */
+.slider{
+     background: url(./image-slider-with-thumbnail2.jpg) center center no-repeat;
+     background-size: cover;
+     padding: 200px 0;
+     background-attachment: fixed;
+     position: relative;
+     z-index: 1;
+}
+.slider-content {
+    color: #fff;
+}
+.slider-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+ .slider-content p {
+    font-size: 20px;
+    width: 600px;
+    margin: auto;
+}
+.slider::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* service Css */
+.service{
+    padding: 60px 0;
+}
+.service-content{}
+.service-content .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.service-item {
+    float: left;
+    width: 31%;
+    box-shadow: 0px 0px 5px black;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 1%;
+}
+.service-item span {
+    width: 50px;
+    height: 50px;
+    background: #596275;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 50px;
+    color: #01b12e;
+    border-radius: 50%;
+}
+.service-item h2 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+.service-item p {
+    font-size: 19px;
+}
+/* footer Css */
+.footer{
+    background-color: #303952;
+}
+.footer-left{
+    width: 50%;
+}
+.footer-left p {
+    margin: 0;
+    color: #fff;
+    line-height: 54px;
+}
+.footer-right{
+    width: 50%;
+}
+.footer-right ul {
+    list-style: none;
+}
+.footer-right ul li {
+    display: inline-block;
+}
+.footer-right ul li a {
+    color: #01b12e;
+    font-size: 35px;
+    margin: 0 7px;
+    line-height: 55px;
+    display: inline-block;
+}
